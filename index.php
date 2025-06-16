@@ -74,9 +74,10 @@ Kirby::plugin('doldenroller/k3-translation-status', [
   'translations' => [
     'en' => [
       'translations.delete.confirm' => 'Do you really want to delete the content of this language?',
-      'translations.delete.success' => 'The language {{code}} has been successfully deleted.',
-      'translations.delete.false' => 'The language {{code}} could not be deleted.',
-      'translations.page.notranslation' => 'The language {{code}} was not translated.',
+      'translations.delete.success' => 'The language ({{code}}) has been successfully deleted.',
+      'translations.delete.error' => 'The language ({{code}}) could not be deleted.',
+      'translations.delete.false' => 'The default language can not be deleted.',
+      'translations.page.notranslation' => 'The language ({{code}}) was not translated.',
       'translations.page.notfound' => 'The page {{page}} doesn\'t exist.',
       'translations.language.switch' => 'Switch to {{language}}',
       'translations.finished' => 'Finished',
@@ -85,9 +86,10 @@ Kirby::plugin('doldenroller/k3-translation-status', [
     ],
     'de' => [
       'translations.delete.confirm' => 'Möchten Sie den Inhalt dieser Sprache wirklich löschen?',
-      'translations.delete.success' => 'Die Sprache {{code}} wurde erfolgreich gelöscht.',
-      'translations.delete.false' => 'Die Sprache {{code}} konnte nicht gelöscht werden.',
-      'translations.page.notranslation' => 'Die Sprache {{code}} ist nicht übersetzt.',
+      'translations.delete.success' => 'Die Sprache ({{code}}) wurde erfolgreich gelöscht.',
+      'translations.delete.error' => 'Die Sprache ({{code}}) konnte nicht gelöscht werden.',
+      'translations.delete.false' => 'Die Standardsprache kann nicht gelöscht werden.',
+      'translations.page.notranslation' => 'Die Sprache ({{code}}) ist nicht übersetzt.',
       'translations.page.notfound' => 'Die Seite {{page}} existiert nicht.',
       'translations.language.switch' => 'Zu {{language}} wechseln',
       'translations.finished' => 'Übersetzt',
