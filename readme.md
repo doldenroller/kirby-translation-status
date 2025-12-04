@@ -125,6 +125,9 @@ Or as global config-option:
 
 In the examples above all users with the`admin` user role and the user with the e-mailadress `chief-editor@website.com` can delete translated content.
 
+### Update/Changes in v3.0
+Kirby 5 support is added.
+
 ## Possible enhencements
 These could be difficult but would be nice features:
 1. Update hint, that shows when content is updated
