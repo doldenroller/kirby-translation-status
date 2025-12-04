@@ -1,4 +1,4 @@
-panel.plugin('doldenroller/k3-translation-status', {
+panel.plugin('doldenroller/kirby-translation-status', {
   sections: {
     translationstatus: {
       data: function () {

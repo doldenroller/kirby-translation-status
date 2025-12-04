@@ -3,7 +3,7 @@
 The delete option was mainly taken from https://github.com/Daandelange/k3-translations
 */
 
-Kirby::plugin('doldenroller/k3-translation-status', [
+Kirby::plugin('doldenroller/kirby-translation-status', [
   'sections' => [
     'translationstatus' => require __DIR__ . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'translationStatus.php'
   ],
