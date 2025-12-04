@@ -131,7 +131,11 @@ These could be difficult but would be nice features:
 2. ~~Delete / reset language, because sometimes its easier to start from scratch~~
 3. Add user identification by user-UUID (Not my prioraty, because I mostly work without UUIDs)
 4. ~~Refresh/update section when new translation is created~~
-5. Check compability with Kirby5
+5. ~~Check compability with Kirby5~~
+
+## Older Versions
+- For Kirby 3 please use [v1.0.0](https://github.com/doldenroller/kirby-translation-status/releases/tag/v1.0.0)
+- For Kirby 4 please use [v2.0.0](https://github.com/doldenroller/kirby-translation-status/releases/tag/v2.0.0)
 
 ## License
 

@@ -82,7 +82,7 @@ $extension = [
       $done = $empty = null;
       foreach($languages as $lang){
         $code = $lang->code();
-        $contentFile = $page->translation($code)->contentFile();
+        //$contentFile = $page->storage()->translation($code)->contentFile();
         $title = tt('translations.language.switch', null, ['language' => $lang->name()]);
 
         // check for default language
@@ -91,7 +91,7 @@ $extension = [
           $notdefault = false;
         }
 
-        if(F::exists($contentFile)){
+        if($page->translation($code)->exists()){
           $done[] = ['code' => $code, 'name' => $lang->name(), 'deleteable' => $deleteable, 'notdefault' => $notdefault, 'title' => $title];
         }else{
           $empty[] = ['code' => $code, 'name' => $lang->name(), 'title' => $title];

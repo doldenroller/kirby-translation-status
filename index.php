@@ -31,22 +31,22 @@ Kirby::plugin('doldenroller/k3-translation-status', [
                 'text' => t('translations.delete.false', 'The default language content can not be deleted.'),
               ];
             }elseif($page = $kirby->page($id)){
-              //$page = $kirby->page($id);
-              $filePath = $page->translation($languageCode)->contentFile();
-              if(F::exists($filePath)){
-                if(F::remove($filePath)){
+
+              if($page->translation($languageCode)->exists()){
+                try{
+                  $page->version('latest')->delete($languageCode);
                   return [
                     'code' => 200,
                     'text' => tt('translations.delete.success', null, ['code' => $languageCode]),
                     'default' => $kirby->defaultLanguage()->code(), // not the prettiest, but I have no clue how to integrate this in th js-part
                   ];
-                // file removed
-                }else{
+                }catch (Exception $error){
                   return [
                     'code' => 500,
                     'text' => tt('translations.delete.error', null, ['code' => $languageCode]),
                   ];
                 }
+
               // file exists
               }else{
                 return [
