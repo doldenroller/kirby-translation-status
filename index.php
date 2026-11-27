@@ -1,12 +1,15 @@
 <?php
-/*
-The delete option was mainly taken from https://github.com/Daandelange/k3-translations
-*/
+use Doldenroller\Translationstatus\TranslationstatusField;
 
-Kirby::plugin('doldenroller/kirby-translation-status', [
-  'sections' => [
-    'translationstatus' => require __DIR__ . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'translationStatus.php'
+load([
+  'Doldenroller\Translationstatus\TranslationstatusField' => 'classes/TranslationstatusField.php'
+], __DIR__);
+
+Kirby::plugin('doldenroller/translationstatus', [
+  'fields' => [
+    'translationstatus' => TranslationstatusField::class
   ],
+
 
   // delete route
   'api' => [
@@ -70,6 +73,7 @@ Kirby::plugin('doldenroller/kirby-translation-status', [
     }
   ],
   // delete route
+
 
   'translations' => [
     'en' => [

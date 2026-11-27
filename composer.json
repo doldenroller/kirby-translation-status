@@ -9,10 +9,10 @@
     }
   ],
   "keywords": [
-    "kirby5",
-    "kirby5-cms",
-    "kirby5-plugin",
-    "kirby5-multilanguage"
+    "kirby6",
+    "kirby6-cms",
+    "kirby6-plugin",
+    "kirby6-multilanguage"
   ],
   "require": {
     "getkirby/composer-installer": "^1.1"

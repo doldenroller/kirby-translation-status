@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "npx -y kirbyup@next src/index.js --watch",
+    "serve": "npx -y kirbyup@next serve src/index.js",
+    "build": "npx -y kirbyup@next src/index.js"
+  }
+}

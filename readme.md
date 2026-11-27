@@ -125,8 +125,13 @@ Or as global config-option:
 
 In the examples above all users with the`admin` user role and the user with the e-mailadress `chief-editor@website.com` can delete translated content.
 
+For `delete` and `ignore` options the blueprint beats the config definition.
+
 ### Update/Changes in v3.0
 Kirby 5 support is added.
+
+### Update/Changes in v4.0
+Kirby 6 support is added.
 
 ## Possible enhencements
 These could be difficult but would be nice features:
@@ -139,6 +144,7 @@ These could be difficult but would be nice features:
 ## Older Versions
 - For Kirby 3 please use [v1.0.0](https://github.com/doldenroller/kirby-translation-status/releases/tag/v1.0.0)
 - For Kirby 4 please use [v2.0.0](https://github.com/doldenroller/kirby-translation-status/releases/tag/v2.0.0)
+- For Kirby 5 please use [v3.0.0](https://github.com/doldenroller/kirby-translation-status/releases/tag/v3.0.0)
 
 ## License
 
